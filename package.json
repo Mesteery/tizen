@@ -1,0 +1,44 @@
+{
+	"name": "tizen",
+	"type": "module",
+	"prettier": "@typescord/prettier-config",
+	"license": "MIT",
+	"description": "Complete TypeScript types definitions for TizenOS WebApp API.",
+	"version": "0.0.0",
+	"author": "Mesteery <mestery@pm.me>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mesteery/tizen.git"
+	},
+	"homepage": "https://github.com/Mesteery/tizen#readme",
+	"bugs": {
+		"url": "https://github.com/Mesteery/tizen/issues"
+	},
+	"scripts": {
+		"generate": "node generator/index.js",
+		"format": "prettier --write .",
+		"check-types": "tsc-silent -p tsconfig.json --suppress 2300,2717,6200@"
+	},
+	"devDependencies": {
+		"@typescord/prettier-config": "^0.1.2",
+		"chalk": "^4.1.2",
+		"cheerio": "^1.0.0-rc.10",
+		"prettier": "^2.4.1",
+		"tsc-silent": "^1.2.1",
+		"typescript": "^4.4.3",
+		"webidl2": "^17.0.0"
+	},
+	"files": [
+		"types"
+	],
+	"keywords": [
+		"types",
+		"typescript",
+		"tizen",
+		"tizenos",
+		"tizen-os"
+	],
+	"volta": {
+		"node": "16.10.0"
+	}
+}

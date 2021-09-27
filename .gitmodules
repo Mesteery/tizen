@@ -1,0 +1,3 @@
+[submodule "tizen-docs"]
+	path = tizen-docs
+	url = https://github.com/Samsung/tizen-docs
